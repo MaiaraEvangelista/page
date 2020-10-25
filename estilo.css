@@ -108,22 +108,22 @@
     font-family: 'Bebas Neue' cursive;
     color: #F9003D;
     font-size: 64px;
-    padding-top: 60px;
-    padding-bottom: 60px;
-    margin-left: 100px;
+    padding-top: 30px;
+    padding-bottom: 30px;
+    margin-left: 130px;
 }
 
 .artigo-sobre{
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap;
-    margin-left: 100px;
+    margin-left: 130px;
 }
 
 .artigo-sobre img{
     width: 45%;
     max-width: 500px;
-    min-width: 450px;
+    min-width: 500px;
 }
 
 .artigo-text-sobre{
@@ -178,6 +178,8 @@
 .info-flex{
     display: flex;
     justify-content: space-between; 
+    align-items: flex-start;
+    padding-top: 45px;
      
 }
 
@@ -195,6 +197,7 @@
     font-size: 64px;
     font-family: 'Bebas Neue', cursive;
     color: #FFAF00;
+    padding-bottom: 10px;
 }
     
 .end-text{
@@ -205,6 +208,7 @@
     position: relative;
     display: flex;
     align-items: center;
+    margin-bottom: 190px;
 }
 
 .end-text p{
@@ -238,7 +242,7 @@
     font-family: 'Open Sans,' sans-serif;
     font-size: 22px;
     text-align: center;
-        
+      padding-top: 25px;  
 }
 
 @media screen and (max-width:1199px){
@@ -251,32 +255,13 @@
        flex-direction: column;
        /*   align-items: center;*/
     }
-    .artigo-sobre{
-        /*justify-content: center;*/
-    }
     .artigo-sobre img{
-        
-    }
-}
-
-@media screen and (max-width:991px){
-    .artigo-sobre img{
-
+        width: 100%;
+        max-width: 60%;
+        margin-bottom: 1em;
     }
     .artigo-text-sobre{
-
-    }
-
-    .info-card{
-
-    }
-    .info p{
-
-    }
-    .end-text{
-
-    }
-    .end-text img{
-        
+        width: 600px;
     }
 }
+
