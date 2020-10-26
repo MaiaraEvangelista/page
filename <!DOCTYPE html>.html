@@ -4,16 +4,20 @@
 
         <title>Landing Page</title>
         <link rel="stylesheet" href="estilo.css">  
+        <script src="https://kit.fontawesome.com/6b54d686b6.js" crossorigin="anonymous"></script>
     </head>
     <body>
         <header class="topo">
             <nav class="menu">
-                <ul>
+                <ul id="meuslinks">
                     <li><a href="#">Início</a></li>
                     <li><a href="#">Sobre</a></li>
                     <li><a href="#">Desafios</a></li>
                     <li><a href="#">Endereço</a></li>
                 </ul>
+             <a href="#" class="btnmenu" onclick="botaoDoMenu()">
+                <i class="fas fa-bars"></i>
+             </a>
             </nav>
         </header>
         <!--Fim do topo-->
@@ -70,8 +74,17 @@
                     <div class=" content rodape-text">
                      <p>Copyright @ 2020 - Escola Senai de Informática</p>   
                     </div>
-                  
-                </div>
-            </footer>
+            </footer>       
+            <script>
+                function botaoDoMenu() {
+                  var ulDoMenu = document.getElementById("meuslinks");
+                  if (ulDoMenu.style.display === "flex") {
+                    ulDoMenu.style.display = "none";
+                  } else {
+                    ulDoMenu.style.display = "flex";
+                  }
+                }
+                </script>
+                
     </body>
 </html>
